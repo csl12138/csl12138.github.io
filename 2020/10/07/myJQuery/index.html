@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives: 2020 | 陈森林的个人博客</title>
+  <title>myJQuery | 陈森林的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="陈森林的个人博客">
-<meta property="og:url" content="http://example.com/archives/2020/index.html">
+  <meta name="description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102">
+<meta property="og:type" content="article">
+<meta property="og:title" content="myJQuery">
+<meta property="og:url" content="http://example.com/2020/10/07/myJQuery/index.html">
 <meta property="og:site_name" content="陈森林的个人博客">
+<meta property="og:description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-10-07T12:53:37.000Z">
+<meta property="article:modified_time" content="2020-10-07T13:00:19.555Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -150,238 +154,166 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-myJQuery" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/10/07/Vue-%E6%95%B0%E6%8D%AE%E5%8A%AB%E6%8C%81/" class="archive-article-date">
-  	<time datetime="2020-10-07T12:56:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-07</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/10/07/Vue-%E6%95%B0%E6%8D%AE%E5%8A%AB%E6%8C%81/">Vue-数据劫持</a>
+    <h1 class="article-title" itemprop="name">
+      myJQuery
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/10/07/myJQuery/" class="archive-article-date">
+        
+        <a href="/2020/10/07/myJQuery/" class="archive-article-date">
   	<time datetime="2020-10-07T12:53:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-07</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/10/07/myJQuery/">myJQuery</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <a id="more"></a>
 
-        <div class="article-info info-on-right">
-          
-          
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * myJQuery</span></span><br><span class="line"><span class="comment"> * 立即执行函数+闭包 = 封闭作用域</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">function</span> <span class="title">jQuery</span> (<span class="params">selector</span>) </span>&#123;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">new</span> jQuery.prototype.init(selector);</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	jQuery.prototype.init = <span class="function"><span class="keyword">function</span> (<span class="params">selector</span>) </span>&#123;</span><br><span class="line">		<span class="comment">//选出dom,并且包装成jq对象，返回；</span></span><br><span class="line">		<span class="comment">// id class</span></span><br><span class="line">		<span class="comment">//谨记new三部曲</span></span><br><span class="line">		</span><br><span class="line">		<span class="built_in">this</span>.length = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">var</span> dom;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">if</span>(selector == <span class="literal">null</span>) &#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="built_in">this</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">if</span> (<span class="keyword">typeof</span>(selector) == <span class="string">&#x27;string&#x27;</span> &amp;&amp; selector.indexOf(<span class="string">&#x27;#&#x27;</span>) != <span class="number">-1</span>) &#123;</span><br><span class="line">			dom =  <span class="built_in">document</span>.getElementById(selector.slice(<span class="number">1</span>));</span><br><span class="line">		&#125;<span class="keyword">else</span> <span class="keyword">if</span> (<span class="keyword">typeof</span>(selector) == <span class="string">&#x27;string&#x27;</span> &amp;&amp; selector.indexOf(<span class="string">&#x27;.&#x27;</span>) != <span class="number">-1</span>) &#123;</span><br><span class="line">			dom = <span class="built_in">document</span>.getElementsByClassName(selector.slice(<span class="number">1</span>));</span><br><span class="line">		&#125;	</span><br><span class="line">		<span class="keyword">if</span> (selector <span class="keyword">instanceof</span> Element || dom.length == <span class="literal">undefined</span>) &#123;</span><br><span class="line">			<span class="built_in">this</span>[<span class="number">0</span>] = dom || selector;</span><br><span class="line">			<span class="built_in">this</span>.length ++;</span><br><span class="line">		&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; dom.length; i++) &#123;</span><br><span class="line">				<span class="built_in">this</span>[i] = dom[i];</span><br><span class="line">				<span class="built_in">this</span>.length ++;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;		</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	jQuery.prototype.init.prototype = jQuery.prototype;</span><br><span class="line">	</span><br><span class="line">	jQuery.prototype.css = <span class="function"><span class="keyword">function</span> (<span class="params">targetobj</span>) </span>&#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="built_in">this</span>.length; i++) &#123;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">var</span> prop <span class="keyword">in</span> targetobj) &#123;</span><br><span class="line">				<span class="built_in">this</span>[i].style[prop] = targetobj[prop];</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//链式操作</span></span><br><span class="line">		<span class="keyword">return</span> <span class="built_in">this</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//加上prevOcject属性</span></span><br><span class="line">	jQuery.prototype.pushStack = <span class="function"><span class="keyword">function</span> (<span class="params">dom</span>) </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (dom.constructor != jQuery) &#123;</span><br><span class="line">			dom = jQuery(dom);</span><br><span class="line">		&#125;</span><br><span class="line">		dom.prevObject = <span class="built_in">this</span>;</span><br><span class="line">		<span class="keyword">return</span> dom;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	jQuery.prototype.get = <span class="function"><span class="keyword">function</span> (<span class="params">num</span>) </span>&#123;</span><br><span class="line"><span class="comment">//		if(num == null) &#123;</span></span><br><span class="line"><span class="comment">//			return [].slice.call(this, 0);</span></span><br><span class="line"><span class="comment">//		&#125;else &#123;</span></span><br><span class="line"><span class="comment">//			if (num &gt;= 0) &#123;</span></span><br><span class="line"><span class="comment">//				return this[num];</span></span><br><span class="line"><span class="comment">//			&#125;else &#123;</span></span><br><span class="line"><span class="comment">//				return this[num + this.length];</span></span><br><span class="line"><span class="comment">//			&#125;</span></span><br><span class="line"><span class="comment">//		&#125;</span></span><br><span class="line"></span><br><span class="line">		<span class="keyword">return</span> num == <span class="literal">null</span>? [].slice.call(<span class="built_in">this</span>, <span class="number">0</span>) : (num &gt;= <span class="number">0</span>? <span class="built_in">this</span>[num] : <span class="built_in">this</span>[num + <span class="built_in">this</span>.length]);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	jQuery.prototype.eq = <span class="function"><span class="keyword">function</span> (<span class="params">num</span>) </span>&#123;</span><br><span class="line">		<span class="keyword">var</span> dom = num == <span class="literal">null</span>? <span class="literal">null</span> : (num &gt;= <span class="number">0</span>? <span class="built_in">this</span>[num] : <span class="built_in">this</span>[num + <span class="built_in">this</span>.length]);</span><br><span class="line">		<span class="keyword">return</span> <span class="built_in">this</span>.pushStack(dom);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	jQuery.prototype.add = <span class="function"><span class="keyword">function</span> (<span class="params">selector</span>) </span>&#123;</span><br><span class="line">		<span class="keyword">var</span> curObj = jQuery(selector),</span><br><span class="line">			baseObj = <span class="built_in">this</span>,</span><br><span class="line">			newObj = jQuery();</span><br><span class="line">		newObj.length = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="built_in">this</span>.length; i++) &#123;</span><br><span class="line">			newObj[i] = <span class="built_in">this</span>[i];</span><br><span class="line">			newObj.length ++;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">var</span> j = <span class="number">0</span>; j &lt; curObj.length; j++) &#123;</span><br><span class="line">			newObj[newObj.length++] = curObj[j];</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> <span class="built_in">this</span>.pushStack(newObj);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	jQuery.prototype.end = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="built_in">this</span>.prevObject;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//绑定自定义事件</span></span><br><span class="line">	jQuery.prototype.myOn = <span class="function"><span class="keyword">function</span> (<span class="params">type, handle</span>) </span>&#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="built_in">this</span>.length; i++) &#123;</span><br><span class="line">			<span class="keyword">if</span>(!<span class="built_in">this</span>[i].cacheEvent) &#123;</span><br><span class="line">				<span class="built_in">this</span>[i].cacheEvent = &#123;&#125;;			</span><br><span class="line">			&#125; </span><br><span class="line">			<span class="keyword">if</span>(!<span class="built_in">this</span>[i].cacheEvent[type]) &#123;</span><br><span class="line">				<span class="built_in">this</span>[i].cacheEvent[type] = [handle];</span><br><span class="line">			&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">				<span class="built_in">this</span>[i].cacheEvent[type].push(handle);</span><br><span class="line">			&#125;		</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//模拟tirgger</span></span><br><span class="line">	jQuery.prototype.myTrigger = <span class="function"><span class="keyword">function</span> (<span class="params">type</span>) </span>&#123;</span><br><span class="line">		<span class="keyword">var</span> params = <span class="built_in">arguments</span>.length &gt; <span class="number">1</span> ? [].slice.call(<span class="built_in">arguments</span>, <span class="number">1</span>) : [],</span><br><span class="line">			self = <span class="built_in">this</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="built_in">this</span>.length; i ++) &#123;</span><br><span class="line">			<span class="keyword">if</span> (<span class="built_in">this</span>[i].cacheEvent[type]) &#123;</span><br><span class="line">				<span class="built_in">this</span>[i].cacheEvent[type].forEach(<span class="function"><span class="keyword">function</span> (<span class="params">ele,index</span>) </span>&#123;</span><br><span class="line">					ele.apply(self, params);</span><br><span class="line">				&#125;);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//模拟入队.queue()</span></span><br><span class="line">	jQuery.prototype.myQueue = <span class="function"><span class="keyword">function</span> (<span class="params"><span class="regexp">/*name, handle*/</span></span>) </span>&#123;</span><br><span class="line">		<span class="keyword">var</span> queueName = <span class="built_in">arguments</span>[<span class="number">0</span>] || <span class="string">&#x27;fx&#x27;</span>,</span><br><span class="line">			addFunc = <span class="built_in">arguments</span>[<span class="number">1</span>] || <span class="literal">null</span>,</span><br><span class="line">			queueObj = <span class="built_in">this</span>,</span><br><span class="line">			len = <span class="built_in">arguments</span>.length;</span><br><span class="line">			</span><br><span class="line">		<span class="comment">//len == 1 表示需要取队列	,否则表示向队列中添加函数</span></span><br><span class="line">		<span class="keyword">if</span> (len == <span class="number">1</span>) &#123;</span><br><span class="line">			<span class="keyword">return</span> queueObj[<span class="number">0</span>].queueName;</span><br><span class="line">		&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">			queueObj[<span class="number">0</span>].queueName == <span class="literal">undefined</span> ? queueObj[<span class="number">0</span>].queueName = [addFunc] : queueObj[<span class="number">0</span>].queueName.push(addFunc);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> queueObj;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//模拟出队.dequeue()</span></span><br><span class="line">	jQuery.prototype.myDequeue = <span class="function"><span class="keyword">function</span> (<span class="params"><span class="regexp">/*name*/</span></span>) </span>&#123;</span><br><span class="line">		<span class="keyword">var</span> queueName = <span class="built_in">arguments</span>[<span class="number">0</span>] || <span class="string">&#x27;fx&#x27;</span>,</span><br><span class="line">			self = <span class="built_in">this</span>;</span><br><span class="line">		<span class="keyword">if</span> (!<span class="built_in">this</span>[<span class="number">0</span>].queueName) &#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">		&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="comment">//取出数组中的第一个函数;</span></span><br><span class="line">			<span class="keyword">var</span> currFunc = <span class="built_in">this</span>[<span class="number">0</span>].queueName.shift();</span><br><span class="line">			<span class="keyword">if</span> (!currFunc) &#123;</span><br><span class="line">				<span class="keyword">return</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="comment">//为数组中下一个函数继续执行做准备；</span></span><br><span class="line">			<span class="keyword">var</span> next = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">				self.myDequeue(queueName);</span><br><span class="line">			&#125;		</span><br><span class="line">			currFunc(next);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> <span class="built_in">this</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	jQuery.prototype.myDelay = <span class="function"><span class="keyword">function</span> (<span class="params">duration</span>) </span>&#123;</span><br><span class="line">		<span class="built_in">this</span>.myQueue(<span class="string">&#x27;fx&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params">next</span>) </span>&#123;</span><br><span class="line">			<span class="built_in">setTimeout</span>(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">				next();</span><br><span class="line">			&#125;, duration)</span><br><span class="line">		&#125;)</span><br><span class="line">		<span class="keyword">return</span> <span class="built_in">this</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	jQuery.prototype.myAnimate = <span class="function"><span class="keyword">function</span> (<span class="params">json, callback</span>) </span>&#123;</span><br><span class="line">		<span class="keyword">var</span> self = <span class="built_in">this</span>,</span><br><span class="line">			len = <span class="built_in">this</span>.length;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">var</span> bascFunc = <span class="function"><span class="keyword">function</span> (<span class="params">next</span>) </span>&#123;</span><br><span class="line">			<span class="keyword">var</span> times = <span class="number">0</span>;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; len; i ++) &#123;</span><br><span class="line">				startMove(self[i], json, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">					times ++;</span><br><span class="line">					<span class="keyword">if</span> (times == len) &#123;	</span><br><span class="line">						next();</span><br><span class="line">						callback &amp;&amp; callback();						</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;)</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="built_in">this</span>.myQueue(<span class="string">&#x27;fx&#x27;</span>, bascFunc);</span><br><span class="line">		<span class="keyword">if</span>(<span class="built_in">this</span>.myQueue(<span class="string">&#x27;fx&#x27;</span>).length == <span class="number">1</span>) &#123;</span><br><span class="line">			<span class="built_in">this</span>.myDequeue(<span class="string">&#x27;fx&#x27;</span>);</span><br><span class="line">		&#125;	</span><br><span class="line">				</span><br><span class="line">		<span class="function"><span class="keyword">function</span> <span class="title">getStyle</span>(<span class="params">elem, prop</span>) </span>&#123;</span><br><span class="line">			<span class="keyword">if</span>(<span class="built_in">window</span>.getComputedStyle) &#123;</span><br><span class="line">				<span class="keyword">return</span> <span class="built_in">window</span>.getComputedStyle(elem, <span class="literal">null</span>)[prop];</span><br><span class="line">			&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">				<span class="keyword">return</span> elem.currentStyle[prop];</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="function"><span class="keyword">function</span> <span class="title">startMove</span>(<span class="params">dom, targetobj, callback</span>) </span>&#123;</span><br><span class="line">			<span class="built_in">clearInterval</span>(dom.timer);</span><br><span class="line">			<span class="keyword">var</span> icur,ispeed,stop;</span><br><span class="line">			dom.timer = <span class="built_in">setInterval</span>(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;					</span><br><span class="line">				<span class="keyword">for</span>(<span class="keyword">var</span> prop <span class="keyword">in</span> targetobj) &#123;</span><br><span class="line">					<span class="keyword">if</span>(prop == <span class="string">&quot;opacity&quot;</span>) &#123;</span><br><span class="line">						icur = <span class="built_in">parseFloat</span>(getStyle(dom, prop)) * <span class="number">100</span>;</span><br><span class="line">					&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">						icur = <span class="built_in">parseInt</span>(getStyle(dom, prop));</span><br><span class="line">					&#125;</span><br><span class="line">					ispeed = (targetobj[prop] - icur) / <span class="number">7</span>;</span><br><span class="line">					ispeed = ispeed &gt; <span class="number">0</span>? <span class="built_in">Math</span>.ceil(ispeed) : <span class="built_in">Math</span>.floor(ispeed);</span><br><span class="line">					<span class="keyword">if</span>(prop == <span class="string">&quot;opacity&quot;</span>) &#123;</span><br><span class="line">						dom.style.opacity = (icur + ispeed) / <span class="number">100</span>;</span><br><span class="line">					&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">						dom.style[prop] = (icur + ispeed) + <span class="string">&quot;px&quot;</span>;</span><br><span class="line">					&#125;</span><br><span class="line">					<span class="keyword">if</span>(icur == targetobj[prop]) &#123;</span><br><span class="line">						stop = <span class="literal">true</span>;</span><br><span class="line">					&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">						stop = <span class="literal">false</span>;</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">if</span>(stop) &#123;</span><br><span class="line">					<span class="built_in">clearInterval</span>(dom.timer);</span><br><span class="line">					<span class="keyword">typeof</span>(callback) == <span class="string">&quot;function&quot;</span> &amp;&amp; callback();</span><br><span class="line">				&#125;</span><br><span class="line">				</span><br><span class="line">			&#125;, <span class="number">30</span>)</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> <span class="built_in">this</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//模拟Callbacks() 实现&#x27;once&#x27;, &#x27;memory&#x27;</span></span><br><span class="line">	jQuery.myCallbacks = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">var</span> options = <span class="built_in">arguments</span>[<span class="number">0</span>] || <span class="string">&#x27;&#x27;</span>,</span><br><span class="line">			list = [],</span><br><span class="line">			fireIndex = <span class="number">0</span>,</span><br><span class="line">			fireArgs = [],</span><br><span class="line">			fired = <span class="literal">false</span>,</span><br><span class="line">			fire = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">				<span class="keyword">for</span> ( ;fireIndex &lt; list.length; fireIndex ++ ) &#123;</span><br><span class="line">					list[fireIndex].apply(<span class="built_in">window</span>, fireArgs);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">if</span> (options.indexOf(<span class="string">&#x27;once&#x27;</span>) != <span class="number">-1</span>) &#123;</span><br><span class="line">					list = [];</span><br><span class="line">					fireIndex = <span class="number">0</span>;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;;</span><br><span class="line">				</span><br><span class="line">		<span class="keyword">return</span> &#123;</span><br><span class="line">			add : <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">				list = list.concat([].slice.call(<span class="built_in">arguments</span>, <span class="number">0</span>)); </span><br><span class="line">				<span class="keyword">if</span> (options.indexOf(<span class="string">&#x27;memory&#x27;</span>) != <span class="number">-1</span> &amp;&amp; fired) &#123;</span><br><span class="line">					fire();</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;,</span><br><span class="line">			fire : <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">				fireIndex = <span class="number">0</span>;</span><br><span class="line">				fired = <span class="literal">true</span>;</span><br><span class="line">				fireArgs = [].slice.call(<span class="built_in">arguments</span>, <span class="number">0</span>);</span><br><span class="line">				fire();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;		</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//模拟实现Deferrd</span></span><br><span class="line">	jQuery.myDeferred = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="keyword">var</span> arrCallbacks = [</span><br><span class="line">		[<span class="built_in">this</span>.myCallbacks(<span class="string">&#x27;once memory&#x27;</span>), <span class="string">&#x27;done&#x27;</span>, <span class="string">&#x27;resolve&#x27;</span>],</span><br><span class="line">		[<span class="built_in">this</span>.myCallbacks(<span class="string">&#x27;once memory&#x27;</span>), <span class="string">&#x27;fail&#x27;</span>, <span class="string">&#x27;reject&#x27;</span>],</span><br><span class="line">		[<span class="built_in">this</span>.myCallbacks(<span class="string">&#x27;memory&#x27;</span>), <span class="string">&#x27;progress&#x27;</span>, <span class="string">&#x27;notify&#x27;</span>]</span><br><span class="line">		],</span><br><span class="line">			df = &#123;&#125;,</span><br><span class="line">			confirm = <span class="literal">true</span>;</span><br><span class="line">		<span class="comment">//通过for循环往df里对照二维数组arrCallbacks加属性。	</span></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arrCallbacks.length; i ++) &#123;</span><br><span class="line">			(<span class="function"><span class="keyword">function</span> (<span class="params">i</span>) </span>&#123;</span><br><span class="line">				df[arrCallbacks[i][<span class="number">1</span>]] = <span class="function"><span class="keyword">function</span> (<span class="params">func</span>) </span>&#123;</span><br><span class="line">					arrCallbacks[i][<span class="number">0</span>].add(func);</span><br><span class="line">					<span class="keyword">return</span> <span class="built_in">this</span>;</span><br><span class="line">				&#125;</span><br><span class="line">				df[arrCallbacks[i][<span class="number">2</span>]] = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">					<span class="keyword">var</span> args = [].slice.call(<span class="built_in">arguments</span>, <span class="number">0</span>);</span><br><span class="line">					<span class="keyword">if</span> (confirm) &#123;</span><br><span class="line">						arrCallbacks[i][<span class="number">0</span>].fire.apply(<span class="built_in">window</span>, args);</span><br><span class="line">					&#125;					</span><br><span class="line">					<span class="keyword">if</span> (arrCallbacks[i][<span class="number">2</span>] == <span class="string">&#x27;resolve&#x27;</span> || arrCallbacks[i][<span class="number">2</span>] == <span class="string">&#x27;reject&#x27;</span>) &#123;</span><br><span class="line">						confirm = <span class="literal">false</span>;</span><br><span class="line">					&#125;</span><br><span class="line">					<span class="keyword">return</span> <span class="built_in">this</span>;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;(i))</span><br><span class="line">		&#125;		</span><br><span class="line">		<span class="keyword">return</span> df;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//把立即执行函数内部的函数保存到了全局</span></span><br><span class="line">	<span class="built_in">window</span>.$ = <span class="built_in">window</span>.jQuery = jQuery;	</span><br><span class="line">&#125;())</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢~~<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/10/07/myJQuery/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/10/07/myTools/" class="archive-article-date">
-  	<time datetime="2020-10-07T12:53:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-07</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2020/10/07/Vue-%E6%95%B0%E6%8D%AE%E5%8A%AB%E6%8C%81/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Vue-数据劫持
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/10/07/myTools/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">myTools</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/10/07/myTools/">myTools</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/10/05/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" class="archive-article-date">
-  	<time datetime="2020-10-05T07:30:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-05</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/10/05/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/">快速排序算法</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/10/05/%E8%BF%AD%E4%BB%A3%E5%99%A8%E7%94%9F%E6%88%90%E5%99%A8%E6%A8%A1%E6%8B%9Fasync-await/" class="archive-article-date">
-  	<time datetime="2020-10-05T07:30:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-05</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/10/05/%E8%BF%AD%E4%BB%A3%E5%99%A8%E7%94%9F%E6%88%90%E5%99%A8%E6%A8%A1%E6%8B%9Fasync-await/">迭代器生成器模拟async await</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/10/05/webpack%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/" class="archive-article-date">
-  	<time datetime="2020-10-05T07:29:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-05</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/10/05/webpack%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/">webpack编译原理</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/10/05/%E6%89%8B%E5%86%99promise/" class="archive-article-date">
-  	<time datetime="2020-10-05T07:29:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-05</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/10/05/%E6%89%8B%E5%86%99promise/">手写promise</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/09/27/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93/" class="archive-article-date">
-  	<time datetime="2020-09-27T10:47:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-27</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/09/27/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93/">浏览器渲染</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -404,8 +336,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
