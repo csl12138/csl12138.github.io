@@ -152,6 +152,68 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-发布-订阅者模式" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/10/07/%E5%8F%91%E5%B8%83-%E8%AE%A2%E9%98%85%E8%80%85%E6%A8%A1%E5%BC%8F/">发布-订阅者模式</a>
+    </h1>
+  
+
+        
+        <a href="/2020/10/07/%E5%8F%91%E5%B8%83-%E8%AE%A2%E9%98%85%E8%80%85%E6%A8%A1%E5%BC%8F/" class="archive-article-date">
+  	<time datetime="2020-10-07T13:08:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> isExist = <span class="built_in">Symbol</span>(<span class="string">&quot;isExist&quot;</span>);   <span class="comment">// 设置私有属性isExist</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Event</span> </span>&#123;</span><br><span class="line">    <span class="keyword">constructor</span>() &#123;</span><br><span class="line">        <span class="built_in">this</span>.eventQuee = &#123;&#125;;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    [isExist] (eventType) &#123;</span><br><span class="line">        <span class="keyword">if</span> (!<span class="built_in">this</span>.eventQuee[eventType]) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">`the event type of <span class="subst">$&#123;eventType&#125;</span> is not defined`</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    on (eventType, handler) &#123;</span><br><span class="line">        <span class="keyword">if</span> (!<span class="built_in">this</span>.eventQuee[eventType]) &#123;</span><br><span class="line">            <span class="built_in">this</span>.eventQuee[eventType] = [handler];</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="built_in">this</span>.eventQuee[eventType].push(handler);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    once (eventType, handler) &#123;</span><br><span class="line">        handler.once = <span class="literal">true</span>;</span><br><span class="line">        <span class="built_in">this</span>.on(eventType, handler);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    remove (eventType, target) &#123;</span><br><span class="line">        <span class="built_in">this</span>[isExist](eventType);</span><br><span class="line">        <span class="built_in">this</span>.eventQuee[eventType].forEach(<span class="function">(<span class="params">fn, index</span>) =&gt;</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (fn === target) &#123;</span><br><span class="line">                <span class="built_in">this</span>.eventQuee[eventType].splice(index, <span class="number">1</span>);</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    clear (eventType) &#123;</span><br><span class="line">        <span class="built_in">this</span>[isExist](eventType);</span><br><span class="line">        <span class="built_in">this</span>.eventQuee[eventType].length = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    emit (eventType, ...args) &#123;</span><br><span class="line">        <span class="built_in">this</span>[isExist](eventType);</span><br><span class="line">        <span class="keyword">const</span> del = [];</span><br><span class="line">        <span class="built_in">this</span>.eventQuee[eventType].forEach(<span class="function">(<span class="params">handler, index</span>) =&gt;</span> &#123;</span><br><span class="line">            handler.apply(<span class="built_in">this</span>, args);</span><br><span class="line">            <span class="keyword">if</span> (handler.once) &#123;</span><br><span class="line">                del.push(index);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">const</span> fnIndex <span class="keyword">of</span> del) &#123;</span><br><span class="line">            <span class="built_in">this</span>.eventQuee[eventType].splice(fnIndex, <span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = Event;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/10/07/%E5%8F%91%E5%B8%83-%E8%AE%A2%E9%98%85%E8%80%85%E6%A8%A1%E5%BC%8F/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Vue-数据劫持" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
